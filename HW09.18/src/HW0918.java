@@ -4,7 +4,6 @@ public class HW0918 {
         //  строки с номером счета (например ”DE5128279087265”) возвращает строку вида ”DE51*********65”
         //  (количество звездочек соответствует количеству засекреченных цифр). Реализуйте 2 варианта метода: 1)
         //  с использованием только циклов, length() и charAt()  2) используя любые необходимые методы класса String
-
         char oldNum1 = '2';
         char oldNum2 = '8';
         char oldNum3 = '2';
@@ -15,13 +14,20 @@ public class HW0918 {
         char oldNum8 = '7';
         char oldNum9 = '2';
 
+
+
         char newNum1 = '*';
-        String str = " DE5128279087265";
-        System.out.println(replace(str, oldNum1, oldNum2, oldNum3, oldNum4, oldNum5, oldNum6, oldNum7, oldNum8, oldNum9, newNum1));
+        String str = "DE5128279087265";
+
+       System.out.println(replace(str, oldNum1, oldNum2, oldNum3, oldNum4, oldNum5, oldNum6, oldNum7, oldNum8, oldNum9, newNum1));
+
         System.out.println("------------------------");
+
+        System.out.println();
+
         System.out.println(replace1(str));
         System.out.println("---------------------------");
-
+        System.out.println(str.length());
 
         String strWord = " (\"Hello world!\", \"world\", \"all\") ";
         String strWord1 = "(\"Hello world!\", \"l\", \"L\") ";
@@ -35,7 +41,8 @@ public class HW0918 {
 
     }
 
-    public static String replace(String str, char oldNum1, char oldNum2, char oldNum3, char oldNum4, char oldNum5, char oldNum6,
+
+   public static String replace(String str, char oldNum1, char oldNum2, char oldNum3, char oldNum4, char oldNum5, char oldNum6,
                                  char oldNum7, char oldNum8, char oldNum9, char newNum1) {
         String res = " ";
 
